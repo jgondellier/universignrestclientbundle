@@ -11,14 +11,14 @@
   ],
   "require": {
     "php": ">=7.2",
-    "universign/client-component": "master"
+    "jgondellier/universignrestclientcomponent": "master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.9"
   },
   "autoload": {
     "psr-4": {
-      "Universign\\ClientBundle\\": ""
+      "Universign\\Rest\\ClientBundle\\": ""
     }
   }
 }
