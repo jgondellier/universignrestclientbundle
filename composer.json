@@ -4,6 +4,8 @@
   "type": "library",
   "license": "MIT",
   "keywords": ["universign","client", "bundle"],
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
   "authors": [
     {
       "name": "Gondellier Jonathan"
