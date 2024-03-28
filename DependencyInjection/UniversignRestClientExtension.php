@@ -27,7 +27,7 @@ class UniversignRestClientExtension extends Extension implements PrependExtensio
     {
         $config = $this->processConfiguration(new Configuration(), $container->getExtensionConfig($this->getAlias()));
 
-        $container->setParameter('universign_rest_uri', $config['uri']);
-        $container->setParameter('universign_rest_token', $config['token']);
+        $container->setParameter('universignRest_uri', $config['uri']);
+        $container->setParameter('universignRest_token', $config['token']);
     }
 }
