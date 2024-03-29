@@ -1,6 +1,5 @@
 <?php
-
-namespace DependencyInjection;
+namespace namespace Universign\Rest\ClientBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
