@@ -20,14 +20,14 @@ class UniversignRestClientExtension extends Extension implements PrependExtensio
 
     public function getAlias()
     {
-        return 'universignRest';
+        return 'universign_rest';
     }
 
     public function prepend(ContainerBuilder $container)
     {
         $config = $this->processConfiguration(new Configuration(), $container->getExtensionConfig($this->getAlias()));
 
-        $container->setParameter('universignRest_uri', $config['uri']);
-        $container->setParameter('universignRest_token', $config['token']);
+        $container->setParameter('universign_rest_uri', $config['uri']);
+        $container->setParameter('universign_rest_token', $config['token']);
     }
 }
