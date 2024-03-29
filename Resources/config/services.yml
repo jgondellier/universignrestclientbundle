@@ -12,8 +12,8 @@ services:
         class: Universign\Rest\ClientComponent\Service\UniversignClient
         autowire: true
         arguments:
-            $uri: '%universign_uri%'
-            $token: '%universign_token%'
+            $uri: '%universign_rest_uri%'
+            $token: '%universign_rest_token%'
             $logger: '@monolog.logger.universign'
 
     Universign\Rest\ClientComponent\Service\UniversignClientInterface: '@default_universign_rest_client'
