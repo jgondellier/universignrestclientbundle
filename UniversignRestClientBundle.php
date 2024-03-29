@@ -1,4 +1,5 @@
 <?php
+namespace Universign\Rest\ClientBundle;
 
 use Universign\Rest\ClientBundle\DependencyInjection\UniversignRestClientExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
