@@ -15,7 +15,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
 
         $treeBuilder
-            ->root('universignRest')
+            ->root('universign_rest')
             ->children()
             ->scalarNode('uri')->isRequired()->cannotBeEmpty()->end()
             ->scalarNode('token')->isRequired()->cannotBeEmpty()->end()
