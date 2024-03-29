@@ -1,12 +1,12 @@
 <?php
-namespace namespace Universign\Rest\ClientBundle\DependencyInjection;
+namespace Universign\Rest\ClientBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Universign\ClientBundle\DependencyInjection\Configuration;
+use Universign\Rest\ClientBundle\DependencyInjection\Configuration;
 
 
 class UniversignRestClientExtension extends Extension implements PrependExtensionInterface
