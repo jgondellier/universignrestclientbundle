@@ -1,25 +1,29 @@
 <?php
-namespace Universign\Rest\ClientBundle\DependencyInjection;
+namespace UniversignRest\ClientBundle\DependencyInjection;
 
+use Exception;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Universign\Rest\ClientBundle\DependencyInjection\Configuration;
+use UniversignRest\ClientBundle\DependencyInjection\Configuration;
 
 
 class UniversignRestClientExtension extends Extension implements PrependExtensionInterface
 {
+    /**
+     * @throws Exception
+     */
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
 
-    public function getAlias()
+    public function getAlias(): string
     {
-        return 'universign_rest';
+        return 'universignrest';
     }
 
     public function prepend(ContainerBuilder $container)

@@ -1,7 +1,7 @@
 <?php
-namespace Universign\Rest\ClientBundle;
+namespace UniversignRest\ClientBundle;
 
-use Universign\Rest\ClientBundle\DependencyInjection\UniversignRestClientExtension;
+use UniversignRest\ClientBundle\DependencyInjection\UniversignRestClientExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class UniversignRestClientBundle extends Bundle

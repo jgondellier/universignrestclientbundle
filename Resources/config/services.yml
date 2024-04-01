@@ -4,16 +4,16 @@ services:
         autoconfigure: true
         public: false
 
-    Universign\Rest\ClientBundle\:
+    UniversignRest\ClientBundle\:
         resource: '../../*'
         exclude: '../../{Event,Entity,Exception,Model}'
 
     default_universign_rest_client:
-        class: Universign\Rest\ClientComponent\Service\UniversignClient
+        class: UniversignRest\ClientComponent\Service\UniversignClient
         autowire: true
         arguments:
             $uri: '%universign_rest_uri%'
             $token: '%universign_rest_token%'
             $logger: '@monolog.logger.universign'
 
-    Universign\Rest\ClientComponent\Service\UniversignClientInterface: '@default_universign_rest_client'
+    UniversignRest\ClientComponent\Service\UniversignClientInterface: '@default_universign_rest_client'
