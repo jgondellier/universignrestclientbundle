@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('universinrest');
+        $treeBuilder = new TreeBuilder('universign_rest_client');
 
         $treeBuilder->getRootNode()
             ->children()
