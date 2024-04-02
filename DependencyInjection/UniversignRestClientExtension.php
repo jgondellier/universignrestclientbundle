@@ -21,7 +21,7 @@ class UniversignRestClientExtension extends Extension implements PrependExtensio
 
     public function getAlias(): string
     {
-        return 'universignrest';
+        return 'universign_rest';
     }
 
     public function prepend(ContainerBuilder $container)

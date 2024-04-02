@@ -8,7 +8,7 @@ services:
         resource: '../../*'
         exclude: '../../{Event,Entity,Exception,Model}'
 
-    default_universign_rest_client:
+    universign_rest_client:
         class: UniversignRest\ClientComponent\Service\UniversignClient
         autowire: true
         arguments:
@@ -16,4 +16,4 @@ services:
             $token: '%universign_rest_token%'
             $logger: '@monolog.logger.universign'
 
-    UniversignRest\ClientComponent\Service\UniversignClientInterface: '@default_universign_rest_client'
+    UniversignRest\ClientComponent\Service\UniversignClientInterface: '@universign_rest_client'
